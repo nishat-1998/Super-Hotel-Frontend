@@ -1,8 +1,20 @@
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Home from "./Pages/Home/Home";
+//import Hotel from "./pages/hotel/Hotel";
+//import List from "./pages/list/List";
+
 function App() {
   return (
-    <div>
-      Hello world!
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        
+      </Routes>
+    </BrowserRouter>
   );
 }
 
